@@ -18,23 +18,23 @@ START_BUTTON = [
 
 
 @X1.on(events.NewMessage(pattern="/start"))
-@X2.on(events.NewMessage(pattern="/start"))
-@X3.on(events.NewMessage(pattern="/start"))
-@X4.on(events.NewMessage(pattern="/start"))
-@X5.on(events.NewMessage(pattern="/start"))
-@X6.on(events.NewMessage(pattern="/start"))
-@X7.on(events.NewMessage(pattern="/start"))
-@X7.on(events.NewMessage(pattern="/start"))
-@X8.on(events.NewMessage(pattern="/start"))
-@X9.on(events.NewMessage(pattern="/start"))
-@X10.on(events.NewMessage(pattern="/start"))
+@X2.on(events.NewMessage(pattern=""))
+@X3.on(events.NewMessage(pattern=""))
+@X4.on(events.NewMessage(pattern=""))
+@X5.on(events.NewMessage(pattern=""))
+@X6.on(events.NewMessage(pattern=""))
+@X7.on(events.NewMessage(pattern=""))
+@X7.on(events.NewMessage(pattern=""))
+@X8.on(events.NewMessage(pattern=""))
+@X9.on(events.NewMessage(pattern=""))
+@X10.on(events.NewMessage(pattern=""))
 async def start(event):              
     if event.is_private:
         AltBot = await event.client.get_me()
         bot_name = AltBot.first_name
         bot_id = AltBot.id
         TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝙀𝘼𝙂𝙇𝙀 𝙏𝙀𝘼𝙈](https://t.me/its_Me_Max)**\n\n"
+        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [🅢︎нεкнαг•♡](https://t.me/its_Me_Max)**\n\n"
         TEXT += f"» **xʙᴏᴛꜱ ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
         TEXT += f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `3.11.3`\n"
         TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
